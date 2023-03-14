@@ -25,7 +25,7 @@ const Budget = () => {
     <>
     <Container className="my-4">
         <Stack direction="horizontal" gap="2" className="mb-4">
-          <h1 className="me-auto">Let's Manage Our Budgets</h1>
+          <h3 className="me-auto">Let's Manage Our Budgets</h3>
           <Button variant="primary" onClick={() => setShowAddBudgetModal(true)}>
             Add Budget
           </Button>

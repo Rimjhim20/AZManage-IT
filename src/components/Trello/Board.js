@@ -58,6 +58,7 @@ class Board extends Component {
     const { addingList } = this.state;
 
     return (
+      <>
       <DragDropContext onDragEnd={this.handleDragEnd}>
         <Droppable droppableId="board" direction="horizontal" type="COLUMN">
           {(provided, _snapshot) => (
@@ -83,7 +84,7 @@ class Board extends Component {
             </div>
           )}
         </Droppable>
-      </DragDropContext>
+      </DragDropContext></>
     );
   }
 }

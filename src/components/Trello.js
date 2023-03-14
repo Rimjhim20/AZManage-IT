@@ -4,10 +4,12 @@ import Board from "./Trello/Board";
 class Home extends Component {
   render() {
     return (
-      <div className="App">
-        <h2 >Manage Your Project Progress</h2>
+     <>
+     <div>
+        <h3 className="mt-4">Manage Your Project Progress</h3>
         <Board />
-      </div>
+        </div>
+        </>
     );
   }
 }

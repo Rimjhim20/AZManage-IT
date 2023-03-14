@@ -1,15 +1,14 @@
-.sidebar {
+.notesidebar {
   display: flex;
   flex-direction: column;
-  gap: 40px;
 }
 
-.sidebar img {
+.notesidebar img {
   width: 60px;
   cursor: pointer;
 }
 
-.sidebar_list {
+.notesidebar_list {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -18,11 +17,11 @@
   transition: 300ms;
 }
 
-.sidebar_list_active {
+.notesidebar_list_active {
   height: 300px;
 }
 
-.sidebar_list_item {
+.notesidebar_list_item {
   border-radius: 50%;
   height: 24px;
   width: 24px;

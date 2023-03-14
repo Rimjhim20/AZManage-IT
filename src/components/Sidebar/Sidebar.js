@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import plusIcon from "../../assets/plus.png";
 
 import "./Sidebar.css";
@@ -10,13 +9,13 @@ function Sidebar(props) {
   const [listOpen, setListOpen] = useState(false);
 
   return (
-    <div className="sidebar">
+    <div className="notesidebar">
       <img src={plusIcon} alt="Add" onClick={() => setListOpen(!listOpen)} />
-      <ul className={`sidebar_list ${listOpen ? "sidebar_list_active" : ""}`}>
+      <ul className={`notesidebar_list ${listOpen ? "notesidebar_list_active" : ""}`}>
         {colors.map((item, index) => (
           <li
             key={index}
-            className="sidebar_list_item"
+            className="notesidebar_list_item"
             style={{ backgroundColor: item }}
             onClick={() => props.addNote(item)}
           />
