@@ -5,14 +5,13 @@ import "./RightSide.css";
 
 const RightSide = () => {
   return (
-    <div className="RightSide">
-   
-      <div>
-        <h4>Client Review</h4>
-        <CustomerReview />
+    <div className="RightSide m-4 pt-4">
+      <div className="">
+        <CustomerReview/>
+        <p className="text-center"><b>Client Review</b></p>
       </div>
       <div>
-        <h3>Bug Reports</h3>
+        <h4>Bug Reports</h4>
         <Updates />
       </div>
     </div>

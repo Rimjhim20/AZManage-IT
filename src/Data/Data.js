@@ -20,7 +20,7 @@ import img3 from "../imgs/img3.png";
 // Sidebar Data
 export const SidebarData = [
   {
-    path:"/",
+    path:"/home",
     icon: UilEstate,
     heading: "Dashboard",
 
