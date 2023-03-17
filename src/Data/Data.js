@@ -41,6 +41,11 @@ export const SidebarData = [
     heading: 'Progress'
   },
   {
+    path:"/collaborate",
+    icon: UilPackage,
+    heading: 'Collaborate'
+  },
+  {
     path:"/chart",
     icon: UilPackage,
     heading: 'Charts'

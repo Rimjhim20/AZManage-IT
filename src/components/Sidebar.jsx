@@ -46,7 +46,7 @@ const Sidebar = () => {
       <div className="logo">
         {/* <img src={Logo} alt="logo" /> */}
         <span>
-          mAnA<span>gE</span>-iT
+          MaNaGe-<span>iT</span>
         </span>
       </div>
 

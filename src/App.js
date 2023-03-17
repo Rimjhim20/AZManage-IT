@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css'
+// import ChatBox from "./components/Chat/ChatBox";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { UserAuthContextProvider } from "./contexts/UserAuthContext";
 import MainDash from './components/MainDash/MainDash';
 import Sidebar from './components/Sidebar';
-import MainChart from './components/Charts/MainChart'
+import MainChart from './components/Charts/MainChart';
+import Maincontact from './components/Contact/Maincontact';
 import InvoiceForm from './components/Invoice/InvoiceForm'
 import { Routes, Route } from "react-router-dom"
 import HomePage from './homepage';
@@ -43,12 +45,22 @@ const App = () => {
                   </ProtectedRoute>
                 }
               />
+                 {/* <Route
+                path="/collaborate"
+                element={
+                  <ProtectedRoute>
+                    <Sidebar />
+                    <ChatBox />
+                  </ProtectedRoute>
+                }
+              /> */}
+
                <Route
                 path="/team"
                 element={
                   <ProtectedRoute>
                     <Sidebar />
-                    <Notes />
+                    <Maincontact/>
                   </ProtectedRoute>
                 }
               />

@@ -56,7 +56,7 @@ const Login = () => {
           </Form.Group>
 
           <div className="d-grid gap-2">
-            <Button variant="primary" type="Submit">
+            <Button variant="secondary" type="Submit">
               Log In
             </Button>
           </div>
@@ -65,12 +65,12 @@ const Login = () => {
         <div>
           <GoogleButton
             className="g-btn"
-            type="dark"
+            type=""
             onClick={handleGoogleSignIn}
           />
         </div>
-        <div className="p-4 box mt-3 text-center">
-        Don't have an account? <Link to="/signup">Sign up</Link>
+        <div className="p-4 box mt-3 text-center ">
+        Don't have an account? <Link to="/signup" className="text-decoration-none">Sign up</Link>
       </div>
       </div>
       

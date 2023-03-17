@@ -45,13 +45,13 @@ const Signup = () => {
           </Form.Group>
 
           <div className="d-grid gap-2">
-            <Button variant="primary" type="Submit">
+            <Button variant="secondary" type="Submit">
               Sign up
             </Button>
           </div>
         </Form>
         <div className="p-4 box mt-3 text-center">
-        Already have an account? <Link to="/">Log In</Link>
+        Already have an account? <Link to="/" className="text-decoration-none">Log In</Link>
       </div>
       </div>
     </>
