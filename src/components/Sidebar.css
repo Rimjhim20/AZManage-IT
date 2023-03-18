@@ -60,7 +60,7 @@
 
 .menu .menuItem:last-child {
   position: absolute;
-  bottom: 2.3rem;
+  bottom: 1rem;
   width: 100%;
 }
 
@@ -72,7 +72,7 @@
   content: "";
   width: 8px;
   height: 100%;
-  background: var(--pink);
+  /* background: var(--pink); */
   margin-right: calc(1rem - 8px);
 }
 

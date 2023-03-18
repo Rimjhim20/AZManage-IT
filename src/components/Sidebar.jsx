@@ -65,12 +65,10 @@ const Sidebar = () => {
           );
         })}
         {/* signoutIcon */}
-        <div className="menuItem">
-          {/* <p className="mt-3">Logout</p> */}
+        <div className="menuItem ">
+        
           <UilSignOutAlt onClick={handleLogout}/>
-          {/* <Button variant="primary" >
-          Log out
-        </Button> */}
+         
         </div>
 
       </div>

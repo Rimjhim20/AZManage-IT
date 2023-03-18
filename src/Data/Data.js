@@ -56,6 +56,11 @@ export const SidebarData = [
     heading: 'Invoice'
   },
   {
+    path:"/documents",
+    icon: UilChart,
+    heading: 'Documents'
+  },
+  {
     path:"/calender",
     icon: UilChart,
     heading: 'Calender'

@@ -3,13 +3,13 @@ import {
   Container, Row, Col, Button, Card, CardImg, CardBody,
   CardTitle, CardText
 } from 'reactstrap';
-import PIC from './assets/timing-project.jpg';
+import PIC from './assets/project2.webp';
 import BANNER from './assets/board.jpg';
 const  Homepage = () => {
   return (
     <>
       <Fragment>
-          <Container className="px-0">
+          <Container className="px-0 pt-4">
             <Row  className="position-relative mt-2 mb-2">
              
               <Col  tag="section" className="py-5 mb-5 py-md-0 mb-md-0 ">
@@ -20,7 +20,9 @@ const  Homepage = () => {
                 
                   One important feature of a project management website is budget tracking. This allows users to monitor and manage their project finances, including costs, revenues, and profits. Users can create and manage budgets, track expenses, which help them make informed decisions and stay within their project budget.
                 </p>
-                <CardImg src={PIC} alt="banner" className='w-75 m-auto'/>
+                <div className='  w-50 h-50 m-auto'>
+                <CardImg src={PIC} alt="banner"/>
+                </div>
               </Col>
 
               {/* <Col xs={{ order: 1 }} md={{ size: 4, order: 1 }} tag="aside" className="pb-5 mb-5 pb-md-0 mb-md-0 mx-auto mx-md-0">

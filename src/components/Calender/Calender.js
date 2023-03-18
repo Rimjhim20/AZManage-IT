@@ -22,7 +22,7 @@ import {
 } from "./utils";
 
 export const Calender = () => {
-  const [currentDate, setCurrentDate] = useState(new Date(2022, 9, 1));
+  const [currentDate, setCurrentDate] = useState(new Date(2023, 2, 1));
   const [events, setEvents] = useState(MOCKAPPS);
   const dragDateRef = useRef();
   const dragindexRef = useRef();
@@ -83,15 +83,13 @@ export const Calender = () => {
   return (
     <Wrapper>
       <DateControls>
-        <ion-icon
+        <button
           onClick={() => prevMonth(currentDate, setCurrentDate)}
-          name="arrow-back-circle-outline"
-        ></ion-icon>
+        >{'<-'}</button>
         {getMonthYear(currentDate)}
-        <ion-icon
+        <button
           onClick={() => nextMonth(currentDate, setCurrentDate)}
-          name="arrow-forward-circle-outline"
-        ></ion-icon>
+        >{'->'}</button>
       </DateControls>
       <SevenColGrid>
         {DAYS.map((day) => (
