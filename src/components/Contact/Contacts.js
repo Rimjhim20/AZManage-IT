@@ -37,16 +37,16 @@ const Contacts = () => {
 
   return (
     <>
-      <h3 className="text-center">Team Details</h3>
+      <h4 className="text-center mt-4">Team Details</h4>
       <div className="row">
-        <div className="col-md-5">
+        <div className="col-md-5 m-auto ">
           <ContactForm {...({ addOrEdit, currentId, contactObjects })} />
         </div>
-        <div className="col-md-7">
-          <table className="table table-borderless table-stripped">
-            <thead className="thead-light">
-              <tr>
-                <th>Full Name</th>
+        <div className="">
+          <table className="table table-borderless table-stripped ">
+            <thead className="thead-light ">
+              <tr >
+                <th >Full Name</th>
                 <th>Mobile</th>
                 <th>Email</th>
                 <th>Actions</th>

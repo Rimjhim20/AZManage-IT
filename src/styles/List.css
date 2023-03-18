@@ -1,5 +1,5 @@
 .List {
-  background: #dfe3e6;
+  background: #bef6ff;
   flex-shrink: 0;
   width: 272px;
   height: fit-content;
@@ -12,22 +12,24 @@
 .List-Title {
   cursor: pointer;
   padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
   overflow-wrap: break-word;
 }
 
 .Toggle-Add-Card {
   cursor: pointer;
   padding: 10px;
-  color: #6b808c;
+  color: #000000;
   border-radius: 0 0 10px 10px;
   display: flex;
   align-items: center;
 }
 
 .Toggle-Add-Card:hover {
-  background-color: rgba(9, 45, 66, 0.13);
-  color: #17394d;
-  text-decoration: underline;
+  background-color: rgb(0, 108, 88);
+  color: #d1eeff;
+  text-decoration: none;
 }
 
 .Toggle-Add-Card ion-icon {

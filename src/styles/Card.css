@@ -1,11 +1,11 @@
 .Card {
   position: relative;
   cursor: pointer;
-  background: rgb(246, 246, 246);
+  background: rgb(255, 255, 255);
   margin: 5px;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 2px solid rgba(0, 0, 0, 0.784);
   box-shadow: 0 1px 0 rgba(9, 45, 66, 0.25);
   font-size: 15px;
   overflow-wrap: break-word;
@@ -13,7 +13,7 @@
 }
 
 .Card:hover {
-  background: #f5f6f7;
+  background: #d9ecff;
 }
 
 .Card-Icons {
@@ -30,6 +30,7 @@
   width: 24px;
   height: 24px;
   display: flex;
+  color: black;
   align-items: center;
   justify-content: center;
   border-radius: 5px;

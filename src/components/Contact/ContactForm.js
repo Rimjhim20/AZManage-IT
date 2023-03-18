@@ -36,10 +36,10 @@ const ContactForm = (props) => {
 
   return (
     <form autoComplete="off" onSubmit={handleFormSubmit}>
-      <div className="form-group input-group">
+      <div className="form-group input-group mb-2">
         <div className="input-group-prepend">
           <div className="input-group-text">
-            <i className="fas fa-user"></i>
+            <i className="fas fa-user mt-2"></i>
           </div>
         </div>
         <input
@@ -51,10 +51,10 @@ const ContactForm = (props) => {
         />
       </div>
       <div className="form-row">
-        <div className="form-group input-group col-md-6">
+        <div className="form-group input-group mb-2 col-md-6">
           <div className="input-group-prepend">
             <div className="input-group-text">
-              <i className="fas fa-mobile-alt"></i>
+              <i className="fas fa-mobile-alt mt-2"></i>
             </div>
           </div>
           <input
@@ -65,10 +65,10 @@ const ContactForm = (props) => {
             onChange={handleInputChange}
           />
         </div>
-        <div className="form-group input-group col-md-6">
+        <div className="form-group input-group mb-2 col-md-6">
           <div className="input-group-prepend">
             <div className="input-group-text">
-              <i className="fas fa-envelope"></i>
+              <i className="fas fa-envelope mt-2"></i>
             </div>
           </div>
           <input
@@ -80,9 +80,9 @@ const ContactForm = (props) => {
           />
         </div>
       </div>
-      <div className="form-group">
+      <div className="form-group mb-2">
         <textarea
-          className="form-control"
+          className="form-control "
           placeholder="Address"
           name="address"
           value={values.address}

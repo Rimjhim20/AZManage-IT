@@ -6,7 +6,7 @@ class Home extends Component {
     return (
      <>
      <div>
-        <h3 className="mt-4">Manage Your Project Progress</h3>
+        <h3 className="text-center">Manage Project Progress</h3>
         <Board />
         </div>
         </>

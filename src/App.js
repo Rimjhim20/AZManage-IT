@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css'
 // import ChatBox from "./components/Chat/ChatBox";
+import Ganttchart from './components/Charts/Ganttchart'
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -42,6 +43,15 @@ const App = () => {
                   <ProtectedRoute>
                     <Sidebar />
                     <Notes />
+                  </ProtectedRoute>
+                }
+              />
+               <Route
+                path="/chartjs"
+                element={
+                  <ProtectedRoute>
+                    <Ganttchart/>
+                  
                   </ProtectedRoute>
                 }
               />

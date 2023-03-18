@@ -1,20 +1,24 @@
 .Board {
   height: 92%;
+  width: 1280px;
+  background: #ffffff;
+  margin: auto;
   display: flex;
-  overflow-x: auto;
+  overflow-x: scroll;
 }
 
 .Add-List {
   width: 272px;
   margin: 10px;
   flex-shrink: 0;
+
 }
 
 .Add-List-Button {
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: rgba(255, 168, 226, 0.322);
   border-radius: 10px;
   cursor: pointer;
-  color: rgb(62, 62, 62);
+font-weight: bold;
   display: flex;
   align-items: center;
   min-height: 32px;
