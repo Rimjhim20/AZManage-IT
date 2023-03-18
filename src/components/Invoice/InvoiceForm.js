@@ -125,11 +125,11 @@ class InvoiceForm extends React.Component {
     return (<Form onSubmit={this.openModal}>
       <Row>
         <Col md={8} lg={9}>
-          <Card className="p-4 p-xl-5 my-3 my-xl-4">
-            <div className="d-flex flex-row align-items-start justify-content-between mb-3">
+          <Card className=" p-4">
+            <div className="d-flex flex-row align-items-start justify-content-between ">
               <div class="d-flex flex-column">
                 <div className="d-flex flex-column">
-                  <div class="mb-2">
+                  <div class=" ">
                     <span className="fw-bold">Current&nbsp;Date:&nbsp;</span>
                     <span className="current-date">{new Date().toLocaleDateString()}</span>
                   </div>
@@ -148,8 +148,8 @@ class InvoiceForm extends React.Component {
                   }} required="required"/>
               </div>
             </div>
-            <hr className="my-4"/>
-            <Row className="mb-5">
+            <hr className="my-1"/>
+            <Row className="mb-1">
               <Col>
                 <Form.Label className="fw-bold">Bill to:</Form.Label>
                 <Form.Control placeholder={"Who is this invoice to?"} rows={3} value={this.state.billTo} type="text" name="billTo" className="my-2" onChange={(event) => this.editField(event)} autoComplete="name" required="required"/>
@@ -164,7 +164,7 @@ class InvoiceForm extends React.Component {
               </Col>
             </Row>
             <InvoiceItem onItemizedItemEdit={this.onItemizedItemEdit.bind(this)} onRowAdd={this.handleAddEvent.bind(this)} onRowDel={this.handleRowDel.bind(this)} currency={this.state.currency} items={this.state.items}/>
-            <Row className="mt-4 justify-content-end">
+            <Row className="mt-1 justify-content-end">
               <Col lg={6}>
                 <div className="d-flex flex-row align-items-start justify-content-between">
                   <span className="fw-bold">Subtotal:
@@ -187,7 +187,7 @@ class InvoiceForm extends React.Component {
                     {this.state.currency}
                     {this.state.taxAmmount || 0}</span>
                 </div>
-                <hr/>
+                <hr className='my-1'/>
                 <div className="d-flex flex-row align-items-start justify-content-between" style={{
                     fontSize: '1.125rem'
                   }}>
@@ -198,18 +198,19 @@ class InvoiceForm extends React.Component {
                 </div>
               </Col>
             </Row>
-            <hr className="my-4"/>
+            <hr className="my-1"/>
             <Form.Label className="fw-bold">Notes:</Form.Label>
-            <Form.Control placeholder="Thanks for your business!" name="notes" value={this.state.notes} onChange={(event) => this.editField(event)} as="textarea" className="my-2" rows={1}/>
+            <Form.Control placeholder="Thanks for your business!" name="notes" value={this.state.notes} onChange={(event) => this.editField(event)} as="textarea" className="my-1" rows={1}/>
           </Card>
         </Col>
         <Col md={4} lg={3}>
           <div className="sticky-top pt-md-3 pt-xl-4">
-            <Button variant="primary" type="submit" className="d-block w-100">Review Invoice</Button>
+            <Button variant="dark" type="submit" className="d-block w-100">Review Invoice</Button>
             <InvoiceModal showModal={this.state.isOpen} closeModal={this.closeModal} info={this.state} items={this.state.items} currency={this.state.currency} subTotal={this.state.subTotal} taxAmmount={this.state.taxAmmount} discountAmmount={this.state.discountAmmount} total={this.state.total}/>
             <Form.Group className="mb-3">
               <Form.Label className="fw-bold">Currency:</Form.Label>
               <Form.Select onChange={event => this.onCurrencyChange({currency: event.target.value})} className="btn btn-light my-1" aria-label="Change Currency">
+              <option value="₹">INR (Indian Rupee)</option>
                 <option value="$">USD (United States Dollar)</option>
                 <option value="£">GBP (British Pound Sterling)</option>
                 <option value="¥">JPY (Japanese Yen)</option>
