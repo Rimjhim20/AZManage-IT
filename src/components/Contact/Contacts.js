@@ -37,7 +37,8 @@ const Contacts = () => {
 
   return (
     <>
-      <h4 className="text-center mt-4">Team Details</h4>
+    <div className="bg-white">
+      <h4 className="text-center  mb-4">Team Details</h4>
       <div className="row">
         <div className="col-md-5 m-auto ">
           <ContactForm {...({ addOrEdit, currentId, contactObjects })} />
@@ -58,7 +59,7 @@ const Contacts = () => {
                   <tr key={id}>
                     <td>{contactObjects[id].fullName}</td>
                     <td>{contactObjects[id].mobile}</td>
-                    <td>{contactObjects[id].email}</td>
+                    <td><a className="text-decoration-none" href="mailto:{contactObjects[id].email}">{contactObjects[id].email}</a></td>
                     <td>
                       <a
                         className="btn text-primary"
@@ -83,6 +84,7 @@ const Contacts = () => {
             </tbody>
           </table>
         </div>
+      </div>
       </div>
     </>
   );

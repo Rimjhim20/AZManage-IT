@@ -1,27 +1,22 @@
 import React, { Fragment } from 'react';
 import {
-  Container, Row, Col, Button, Card, CardImg, CardBody,
-  CardTitle, CardText
+  Container, Row, Col, CardImg
 } from 'reactstrap';
 import PIC from './assets/project2.webp';
-import BANNER from './assets/board.jpg';
 const  Homepage = () => {
   return (
     <>
       <Fragment>
-          <Container className="px-0 pt-4">
+          <Container className="px-0 pt-4 bg-white">
             <Row  className="position-relative mt-2 mb-2">
-             
               <Col  tag="section" className="py-5 mb-5 py-md-0 mb-md-0 ">
-              
-               
                 <h1 className='text-center'>"A goal without a plan is just a wish."</h1>
-                <p className='p-4'>Project management is the process of organizing, planning, and overseeing various tasks and resources to achieve specific goals and objectives. A project management website can provide tools and resources to help users plan, execute, and track their projects, as well as collaborate with team members and stakeholders.
+                <h5 className='p-4'>Project management is the process of organizing, planning, and overseeing various tasks and resources to achieve specific goals and objectives. A project management website can provide tools and resources to help users plan, execute, and track their projects, as well as collaborate with team members and stakeholders.
                 
                   One important feature of a project management website is budget tracking. This allows users to monitor and manage their project finances, including costs, revenues, and profits. Users can create and manage budgets, track expenses, which help them make informed decisions and stay within their project budget.
-                </p>
-                <div className='  w-50 h-50 m-auto'>
-                <CardImg src={PIC} alt="banner"/>
+                </h5>
+                <div className=' '>
+                <CardImg src={PIC} alt="banner" className='w-50 h-50 d-flex m-auto'/>
                 </div>
               </Col>
 

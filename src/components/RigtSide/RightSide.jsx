@@ -8,7 +8,7 @@ const RightSide = () => {
     <div className="RightSide m-4 pt-4">
       <div className="">
         <CustomerReview/>
-        <p className="text-center"><b>Client Review</b></p>
+        <h6 className="text-center"><b>Client Review</b></h6>
       </div>
       <div>
         <h4>Bug Reports</h4>

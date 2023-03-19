@@ -1,7 +1,7 @@
 .Card {
   position: relative;
   cursor: pointer;
-  background: rgb(255, 255, 255);
+  background: #2e74ff;
   margin: 5px;
   padding: 10px;
   border-radius: 5px;
@@ -35,8 +35,8 @@
   justify-content: center;
   border-radius: 5px;
   margin: 1px;
-  color: rgba(0, 0, 0, 0.5);
-  background: #f5f6f7;
+  color: rgba(0, 0, 0, 0.99);
+  background: #ffffff;
   opacity: 0.9;
 }
 

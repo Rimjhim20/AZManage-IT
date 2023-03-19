@@ -5,11 +5,10 @@ import { UilSignOutAlt } from "@iconscout/react-unicons";
 import { SidebarData } from "../Data/Data";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
-import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../contexts/UserAuthContext";
 const Sidebar = () => {
-  const { logOut, user } = useUserAuth();
+  const { logOut} = useUserAuth();
   const navigate = useNavigate();
   const [selected, setSelected] = useState(0);
 

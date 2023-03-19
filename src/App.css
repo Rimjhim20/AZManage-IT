@@ -1,45 +1,3 @@
- /* .App {
-  text-align: center;
-  max-width: 1380px;
-  margin: auto;
-} */
-/*
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-
 :root {
   --yellow: linear-gradient(180deg, #F8D49A -146.42%, #FAD79D -46.42%);
   --orange: #fca61f;
@@ -69,26 +27,13 @@
   font-family: 'Inter', sans-serif;
 }
 
-/* .AppGlass {
-  display: grid;
-  height: 97%;
-  width: 97%;
-  background: var(--glass);
-  border-radius: 2rem;
-  gap: 16px;
-  grid-template-columns: 11rem auto 20rem;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 1200px) {
-  .AppGlass{
-    grid-template-columns: 10% 50% auto;
-    overflow-y: scroll;
-  } 
-}
-
-@media screen and (max-width: 768px) {
-  .AppGlass{
-    grid-template-columns: 1fr;
-  } 
-} */
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-icons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-grids/styles/material.css';
+@import "../node_modules/@syncfusion/ej2-react-filemanager/styles/material.css";

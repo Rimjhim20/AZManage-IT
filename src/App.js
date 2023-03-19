@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css'
-// import ChatBox from "./components/Chat/ChatBox";
-import Ganttchart from './components/Charts/Ganttchart'
+import Documents from './Documents'
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -12,12 +11,13 @@ import MainChart from './components/Charts/MainChart';
 import Maincontact from './components/Contact/Maincontact';
 import InvoiceForm from './components/Invoice/InvoiceForm'
 import { Routes, Route } from "react-router-dom"
-import HomePage from './homepage';
+import About from './About';
 import Notes from './Notes'
 import Budget from './budget'
 import Trello from './components/Trello'
 import { Calender } from './components/Calender/Calender'
 import Footer from './components/Footer';
+import Realtimechat from './Realtimechat';
 
 const App = () => {
   return (
@@ -26,7 +26,7 @@ const App = () => {
         <div className="AppGlass">
           <UserAuthContextProvider>
             <Routes>
-            <Route path="/" element={<Login />} />
+              <Route path="/" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
               <Route
                 path="/home"
@@ -46,31 +46,31 @@ const App = () => {
                   </ProtectedRoute>
                 }
               />
-               <Route
-                path="/chartjs"
+              <Route
+                path="/documents"
                 element={
                   <ProtectedRoute>
-                    <Ganttchart/>
-                  
+                    <Sidebar />
+                    <Documents />
                   </ProtectedRoute>
                 }
               />
-                 {/* <Route
+
+              <Route
                 path="/collaborate"
                 element={
                   <ProtectedRoute>
                     <Sidebar />
-                    <ChatBox />
+                    <Realtimechat />
                   </ProtectedRoute>
                 }
-              /> */}
-
-               <Route
+              />
+              <Route
                 path="/team"
                 element={
                   <ProtectedRoute>
                     <Sidebar />
-                    <Maincontact/>
+                    <Maincontact />
                   </ProtectedRoute>
                 }
               />
@@ -97,7 +97,7 @@ const App = () => {
                 element={
                   <ProtectedRoute>
                     <Sidebar />
-                    <HomePage />
+                    <About />
                   </ProtectedRoute>
                 }
               />

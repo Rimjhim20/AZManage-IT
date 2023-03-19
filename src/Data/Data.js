@@ -5,12 +5,16 @@ import {
   UilUsersAlt,
   UilPackage,
   UilChart,
+  UilUsdSquare,
+  UilFolderOpen,
+  UilAnalysis,
+  UilInvoice ,
+  UilMoneyWithdrawal,
+  UilMessage,
+  UilCalender,
+  UilCog,
   UilSignOutAlt,
 } from "@iconscout/react-unicons";
-
-// Analytics Cards imports
-import { UilUsdSquare, UilMoneyWithdrawal } from "@iconscout/react-unicons";
-import { keyboard } from "@testing-library/user-event/dist/keyboard";
 
 // Recent Card Imports
 import img1 from "../imgs/img1.png";
@@ -26,48 +30,48 @@ export const SidebarData = [
 
   },
   { path:"/team",
-    icon: UilClipboardAlt,
+    icon: UilUsersAlt,
     heading: "Team",
    
   },
   {
     path:"/budget",
-    icon: UilUsersAlt,
+    icon: UilClipboardAlt,
     heading: "Budget",
   },
   {
     path:"/trello",
-    icon: UilPackage,
+    icon: UilAnalysis,
     heading: 'Progress'
   },
   {
     path:"/collaborate",
-    icon: UilPackage,
+    icon: UilMessage,
     heading: 'Collaborate'
   },
   {
     path:"/chart",
-    icon: UilPackage,
+    icon: UilChart,
     heading: 'Charts'
   },
   {
     path:"/invoice",
-    icon: UilChart,
+    icon: UilInvoice ,
     heading: 'Invoice'
   },
   {
     path:"/documents",
-    icon: UilChart,
+    icon: UilFolderOpen,
     heading: 'Documents'
   },
   {
     path:"/calender",
-    icon: UilChart,
+    icon: UilCalender,
     heading: 'Calender'
   },
   {
     path:"/about",
-    icon: UilChart,
+    icon: UilCog,
     heading: 'About'
   },
 ];

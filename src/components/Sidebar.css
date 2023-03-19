@@ -5,7 +5,7 @@
   width: 30%;
   padding-top: 1rem;
   transition: all 300ms ease;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(200, 229, 255);
 }
 /* logo */
 .bars{
@@ -24,7 +24,7 @@
   margin-bottom: 10px;
 }
 .logo > span > span {
-  color: var(--pink);
+  color: #0152ff;
 }
 
 .logo > img {
@@ -65,7 +65,7 @@
 }
 
 .active {
-  background: var(--activeItem);
+  background: #9fbeff;
   margin-left: 0;
 }
 .active::before {
@@ -91,7 +91,7 @@
   .sidebar{
     position: fixed;
     z-index: 9;
-    background: #ffe0e0;
+     background: #bed3ff;
     width: 55%;
     padding-right: 1rem;
     height: 100%;
@@ -111,7 +111,7 @@
     position: fixed;
     top: 2rem;
     left:60%;
-    background:#ffe0e0;
+    background: #bed3ff;
     padding:10px;
     border-radius: 10px;
     z-index: 9;
