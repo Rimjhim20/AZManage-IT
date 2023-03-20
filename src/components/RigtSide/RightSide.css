@@ -3,9 +3,12 @@
     flex-direction: column;
     width: 70%;
     justify-content: space-evenly;
-    height: 80%;
 }
-
+.reportbtn{
+    height: 20%;
+    width: 15%;
+    margin-top: 10px;
+}
 
 @media screen and (max-width: 1200px) {
     .RightSide{

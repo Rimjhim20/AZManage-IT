@@ -33,7 +33,7 @@ function Realtimechat() {
   }
   function SignOut() {
     return auth.currentUser && (
-      <button className="sign-out" onClick={() => auth.signOut()}>Sign Out</button>
+      <button className="sign-out chatbtn" onClick={() => auth.signOut()}>Sign Out</button>
     )
   }
   function ChatRoom() {
@@ -75,7 +75,7 @@ function Realtimechat() {
   
         <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Discuss something related to project work!!" />
   
-        <button type="submit" disabled={!formValue}>submit</button>
+        <button type="submit" className='chatbtn' disabled={!formValue}>submit</button>
   
       </form>
     </>)

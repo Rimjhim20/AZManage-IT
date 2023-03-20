@@ -81,7 +81,7 @@ input {
   padding: 0 10px;
 }
 
-button {
+.chatbtn {
   background-color: #282c34; /* Green */
   border: none;
   color: white;
